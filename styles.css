@@ -1,0 +1,113 @@
+/* My first CSS styling work. I aim to try and use most of the tools I've come across so far */
+
+body {
+  background-color: #000000; /* Makes the entire background pure black */
+  color: #ffffff;            /* Changes default text to white so it is readable */
+  margin: 0;                 /* Removes default browser gaps around the edges */
+  min-height: 100vh;         /* Ensures the black background fills the full screen height */
+  display: flex;
+  flex-direction: column; /* Stacks your elements vertically */
+  align-items: center;    /* Centers everything horizontally */
+}
+
+
+.heading {
+    text-align: center;
+    display: flex;
+    font-size: 32px;
+    background-color: black;
+    color: darkred;
+    font-weight: bolder;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+.intro {
+    text-align: center;
+    display: flex;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    
+}
+
+ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+ol {
+    width: fit-content;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.card {
+    padding: 8px;
+    text-align: center;
+
+}
+
+p {
+    text-align: center; /* Centers my paragraphs including my picture of Odin*/
+}
+
+.dishes {
+    text-align: center;
+    background-color: black;
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: aqua;
+    width: 600px;
+    border-radius: 8px;
+    margin: 0 auto;
+
+}
+
+.my-button {
+  /* Crucial properties to make it behave like a block/button */
+  display: inline-block;       /* Allows width, height, and margins */
+  text-decoration: none;       /* Removes the default link underline */
+  text-align: center;          /* Centers the text inside */
+  cursor: pointer;             /* Shows the hand cursor on hover */
+
+  /* Visual styling */
+  background-color: #007bff;   /* Button background color (Blue) */
+  color: #ffffff;              /* Text color (White) */
+  padding: 12px 24px;          /* Space inside the button (top/bottom left/right) */
+  font-size: 16px;             /* Size of the text */
+  font-weight: bold;           /* Bold text */
+  border-radius: 6px;          /* Rounded corners */
+    
+  /* Smooth color transition effect */
+  transition: background-color 0.3s ease; 
+}
+
+/* Hover effect when someone mouses over the button */
+.my-button:hover {
+  background-color: #0056b3;   /* Darker blue on hover */
+}
+
+/* Active effect when the button is clicked */
+.my-button:active {
+  background-color: #004085;   /* Even darker blue while clicking */
+}
